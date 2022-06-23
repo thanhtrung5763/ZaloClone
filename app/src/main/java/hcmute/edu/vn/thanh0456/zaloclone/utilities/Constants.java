@@ -55,7 +55,7 @@ public class Constants {
 
     public static final String REMOTE_MSG_DATA = "data";
     public static final String REMOTE_MSG_REGISTRATION_IDS = "registration_ids";
-    public static final String SERVER_KEY = "key=AAAAEIMVpTA:APA91bEhNuwbBVBe5XKzzg1PzezhtJyGgah_Top3J19CEtGrA9Oft3ip_iFyyYBDs5M7BaJQ-dnBvObjPi1pcbXZrlRcM-KWnlUNdz8WQMYFKwIU0TULhvvtvPw95vpfVq9HONSnji8G";
+    public static final String SERVER_KEY = "key=YOUR_SERVER_KEY";
 
     // Các hằng số được sử dụng khi gửi lời mời tham gia cuộc gọi thoại cho người khác
     public static final String REMOTE_MSG_TYPE = "type";
