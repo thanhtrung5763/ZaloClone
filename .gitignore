@@ -13,3 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Config file for Google services with secret keys
+app/google-services.json
