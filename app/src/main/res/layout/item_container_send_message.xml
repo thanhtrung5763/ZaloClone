@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_4sdp">
+
+    <FrameLayout
+        android:id="@+id/messageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_send_message"
+            android:paddingVertical="@dimen/_5sdp"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+
+            android:text="@string/hello_how_are_you"
+            android:maxWidth="@dimen/_200sdp"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageMessage"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            app:riv_corner_radius="@dimen/_16sdp"/>
+
+        <me.jagar.chatvoiceplayerlibrary.VoicePlayerView
+            android:id="@+id/audioMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:visualizationPlayedColor="#ff7700"
+            app:visualizationNotPlayedColor="#727171"
+            app:playPauseBackgroundColor="@color/primary"
+            app:timingBackgroundColor="#F1F1F1"
+            app:seekBarProgressColor="@color/primary"
+            app:showShareButton="false"
+            app:playPauseCornerRadius="100"
+            app:showTiming="true"
+            app:viewCornerRadius="100"
+            app:viewBackground="#F1F1F1"
+            app:progressTimeColor="#000"
+            android:visibility="gone"
+            app:seekBarThumbColor="@color/primary"
+            app:playProgressbarColor="#C8FF5100"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textDateTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/_8ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/messageLayout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

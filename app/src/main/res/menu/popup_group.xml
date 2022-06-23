@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/change_group_photo"
+        android:id="@+id/changeGroupPhoto"/>
+    <item
+        android:title="@string/change_name"
+        android:id="@+id/changeName"/>
+    <item
+        android:title="@string/delete_conversation"
+        android:id="@+id/deleteGroup"/>
+    <item
+        android:title="@string/leave_group"
+        android:id="@+id/leaveGroup"/>
+</menu>

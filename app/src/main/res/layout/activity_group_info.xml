@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GroupInfoActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageBack"
+        android:layout_width="@dimen/_27sdp"
+        android:layout_height="@dimen/_27sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:padding="@dimen/_6sdp"
+        android:src="@drawable/ic_baseline_arrow_back"
+        android:tint="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/group_info"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toEndOf="@id/imageBack"
+        android:layout_marginStart="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="@id/imageBack"
+        app:layout_constraintBottom_toBottomOf="@id/imageBack"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageMore"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageBack"
+        app:layout_constraintBottom_toBottomOf="@id/imageBack"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:src="@drawable/ic_baseline_more_vert_24"
+        android:padding="@dimen/_5sdp"
+        android:tint="@color/black"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/background_image"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/_24sdp"
+        app:layout_constraintTop_toBottomOf="@id/imageBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:riv_oval="true"/>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:text="@string/group_name"
+        android:textAlignment="center"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_4sdp"
+        app:layout_constraintTop_toBottomOf="@id/imageProfile"
+        app:layout_constraintEnd_toEndOf="@id/imageProfile"
+        app:layout_constraintStart_toStartOf="@id/imageProfile"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/textName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tabIndicator="@drawable/tab_indicator"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        android:layout_marginTop="@dimen/_8sdp">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_members"/>
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/admin"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@id/tab_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/usersRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:overScrollMode="never"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/primary"/>
+
+        <TextView
+            android:id="@+id/textErrorMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_24sdp"
+            android:gravity="center"
+            android:textColor="@color/error"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

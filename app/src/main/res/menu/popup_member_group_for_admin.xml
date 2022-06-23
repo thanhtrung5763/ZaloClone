@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/message"
+        android:id="@+id/message"/>
+    <item
+        android:title="@string/set_as_admin"
+        android:id="@+id/setAdmin"/>
+    <item
+        android:title="@string/remove_from_group"
+        android:id="@+id/removeMember"/>
+</menu>

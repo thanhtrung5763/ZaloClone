@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "70918710576",
+    "project_id": "zalo-clone-29b7d",
+    "storage_bucket": "zalo-clone-29b7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70918710576:android:1bcfd00252c2dcacee14f5",
+        "android_client_info": {
+          "package_name": "hcmute.edu.vn.thanh0456.zaloclone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70918710576-2qpj94nco132mnfv2be8scp7u7ai29fc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5IrEJvKoZjrc75mGVgOg90CVN2iv7OcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70918710576-2qpj94nco132mnfv2be8scp7u7ai29fc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

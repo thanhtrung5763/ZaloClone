@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1685185185185185" />
+        <entry key="app/src/main/res/drawable-v24/tab_indicator.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/background_availability.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/background_chat_input.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/background_dummy.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/background_image.xml" value="0.21" />
+        <entry key="app/src/main/res/drawable/background_image_message.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/background_input.xml" value="0.27" />
+        <entry key="app/src/main/res/drawable/background_received_message.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/background_search.xml" value="0.2555" />
+        <entry key="app/src/main/res/drawable/background_send_message.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/dialog_bg.xml" value="0.1095" />
+        <entry key="app/src/main/res/drawable/edit_bg_selected.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/edit_bg_selector.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/ic_baseline_check_circle_24.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_baseline_cloud_24.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/ic_baseline_explore_24.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/ic_baseline_radio_button_unchecked_24.xml" value="0.187" />
+        <entry key="app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/icon_background.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/icon_camera.xml" value="0.181" />
+        <entry key="app/src/main/res/drawable/icon_emoji.xml" value="0.181" />
+        <entry key="app/src/main/res/drawable/icon_info.xml" value="0.181" />
+        <entry key="app/src/main/res/drawable/icon_phone.xml" value="0.181" />
+        <entry key="app/src/main/res/drawable/icon_search.xml" value="0.2555" />
+        <entry key="app/src/main/res/drawable/icon_video.xml" value="0.181" />
+        <entry key="app/src/main/res/drawable/ripple_black.xml" value="0.2555" />
+        <entry key="app/src/main/res/drawable/selector_item_background.xml" value="0.2555" />
+        <entry key="app/src/main/res/drawable/selector_nav.xml" value="0.27" />
+        <entry key="app/src/main/res/drawable/selector_user_to_add_group.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/tab_background.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/tab_shape.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/text_box_underline.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/text_box_underline_activated.xml" value="0.216" />
+        <entry key="app/src/main/res/drawable/text_box_underline_selector.xml" value="0.216" />
+        <entry key="app/src/main/res/layout/activity_chat.xml" value="0.34754402224281744" />
+        <entry key="app/src/main/res/layout/activity_chat_backup.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/activity_group.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_group_info.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_group_message.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/activity_users.xml" value="0.34074074074074073" />
+        <entry key="app/src/main/res/layout/activity_video_calling_in_coming.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/activity_video_calling_outgoing.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/dialog_edit_groupname.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/dialog_edit_membergroup.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/dialog_edit_username.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/dialog_yes_no.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/fragment_cloud.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_explore.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/fragment_group.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/fragment_person.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/item_container_group_item.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/item_container_group_received_message.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/item_container_group_send_message.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/item_container_received_message.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/item_container_recent_conversation.xml" value="0.3142437591776799" />
+        <entry key="app/src/main/res/layout/item_container_recent_group.xml" value="0.21979166666666666" />
+        <entry key="app/src/main/res/layout/item_container_send_message.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/item_container_story.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/item_container_user.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/item_container_user_group.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/layout_dialog_edit_groupname.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/testRecordLayout.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/test_layout.xml" value="0.22395833333333334" />
+        <entry key="app/src/main/res/layout/viewholder_user.xml" value="0.5" />
+        <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.3734375" />
+        <entry key="app/src/main/res/menu/popup_group.xml" value="0.3734375" />
+        <entry key="app/src/main/res/menu/popup_member_group.xml" value="0.3734375" />
+        <entry key="app/src/main/res/menu/popup_member_group_for_member.xml" value="0.3734375" />
+        <entry key="app/src/main/res/menu/popup_user.xml" value="0.3734375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

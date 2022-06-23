@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageProfile"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/background_image"
+        android:scaleType="centerCrop"
+        app:riv_oval="true" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageSignOut"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:src="@drawable/ic_baseline_logout_24"
+        android:background="@drawable/background_image"
+        android:padding="@dimen/_6sdp"
+        android:tint="@color/black"/>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        android:layout_alignTop="@id/imageProfile"
+        android:layout_alignBottom="@id/imageProfile"
+        android:layout_toStartOf="@id/imageSignOut"
+        android:layout_toEndOf="@id/imageProfile"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_below="@id/imageProfile"
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_nav"
+        app:itemIconTint="@drawable/selector_nav"
+        app:menu="@menu/bottom_nav"
+        android:layout_alignParentBottom="true"
+        android:background="#F8F8F8"/>
+
+</RelativeLayout>
+

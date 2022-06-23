@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PersonFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageMore"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageProfile"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:padding="@dimen/_5sdp"
+            android:tint="@color/black"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:background="@drawable/background_image"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/_24sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:riv_oval="true"/>
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:ellipsize="end"
+            android:text="@string/user_name"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_4sdp"
+            app:layout_constraintTop_toBottomOf="@id/imageProfile"
+            app:layout_constraintEnd_toEndOf="@id/imageProfile"
+            app:layout_constraintStart_toStartOf="@id/imageProfile"/>
+
+        <ImageView
+            android:id="@+id/noti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/textName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_notifications_24"
+            android:background="@drawable/icon_background"
+            android:backgroundTint="#FCA54D"
+            android:backgroundTintMode="src_over"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvnoti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notifications"
+            app:layout_constraintTop_toTopOf="@id/noti"
+            app:layout_constraintStart_toEndOf="@id/noti"
+            app:layout_constraintBottom_toBottomOf="@id/noti"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_12ssp"/>
+
+        <ImageView
+            android:id="@+id/privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvnoti"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_shield_24"
+            android:background="@drawable/icon_background"
+            android:backgroundTint="#1FA6EA"
+            android:backgroundTintMode="src_over"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvprivacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/privacy"
+            app:layout_constraintTop_toTopOf="@id/privacy"
+            app:layout_constraintStart_toEndOf="@id/privacy"
+            app:layout_constraintBottom_toBottomOf="@id/privacy"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_12ssp"/>
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvprivacy"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/icon_photo"
+            android:background="@drawable/icon_background"
+            android:backgroundTint="#8163d3"
+            android:backgroundTintMode="src_over"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvphoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/photos_media"
+            app:layout_constraintTop_toTopOf="@id/photo"
+            app:layout_constraintStart_toEndOf="@id/photo"
+            app:layout_constraintBottom_toBottomOf="@id/photo"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_12ssp"/>
+
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvphoto"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_help_24"
+            android:background="@drawable/icon_background"
+            android:backgroundTint="#57c05e"
+            android:backgroundTintMode="src_over"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvhelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help"
+            app:layout_constraintTop_toTopOf="@id/help"
+            app:layout_constraintStart_toEndOf="@id/help"
+            app:layout_constraintBottom_toBottomOf="@id/help"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_12ssp"/>
+
+        <ImageView
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvhelp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_feedback_24"
+            android:background="@drawable/icon_background"
+            android:backgroundTint="#3572ff"
+            android:backgroundTintMode="src_over"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvfeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback"
+            app:layout_constraintTop_toTopOf="@id/feedback"
+            app:layout_constraintStart_toEndOf="@id/feedback"
+            app:layout_constraintBottom_toBottomOf="@id/feedback"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_12ssp"/>
+
+        <ImageView
+            android:id="@+id/aboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvfeedback"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_about_24"
+            android:background="@drawable/icon_background"
+            android:backgroundTint="#EF5C5C"
+            android:backgroundTintMode="src_over"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvaboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about_us"
+            app:layout_constraintTop_toTopOf="@id/aboutus"
+            app:layout_constraintStart_toEndOf="@id/aboutus"
+            app:layout_constraintBottom_toBottomOf="@id/aboutus"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_12ssp"/>
+
+        <ImageView
+            android:id="@+id/signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/tvaboutus"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="@dimen/_4sdp"
+            android:src="@drawable/ic_baseline_logout_24"
+            android:background="@drawable/icon_background"
+            android:backgroundTint="@color/secondary_text"
+            android:backgroundTintMode="src_over"
+            app:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvsignout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_out"
+            app:layout_constraintTop_toTopOf="@id/signout"
+            app:layout_constraintStart_toEndOf="@id/signout"
+            app:layout_constraintBottom_toBottomOf="@id/signout"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:textSize="@dimen/_12ssp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

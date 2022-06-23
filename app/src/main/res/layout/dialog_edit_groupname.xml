@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:padding="@dimen/_8sdp"
+    android:layout_margin="@dimen/_16sdp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_group_name"
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"/>
+
+    <EditText
+        android:id="@+id/edtGroupName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:isScrollContainer="true"
+        android:textSize="@dimen/_12sdp"
+        android:background="@drawable/text_box_underline_selector"
+        android:paddingVertical="@dimen/_6sdp"
+        android:textCursorDrawable="@null"
+        android:paddingHorizontal="@dimen/_2sdp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_12sdp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/remove_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove"
+            android:background="@null"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:background="@null"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:background="@null"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/primary"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
